@@ -9,7 +9,7 @@ public class Main {
         Thermostat thermostat = new Thermostat();
 
         Command lightOn = new TurnOnLightCommand(light);
-        Command setTemp = new SetThermostatCommand(thermostat, 22);
+        Command setTemp = new SetThermostatCommand(thermostat, 21);
 
         SmartHomeRemoteControl remote = new SmartHomeRemoteControl();
         remote.setCommand("light", lightOn);
